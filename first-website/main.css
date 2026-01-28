@@ -1,0 +1,28 @@
+html {
+    background-color: rgb(238, 255, 4);
+    font-size: 30px;
+}
+
+p {
+    background-color:aqua;
+    color:black;
+    border: 4px dotted blue;
+    text-align:right;
+    padding: 20px 60px;
+    margin: 50px;
+}
+
+h1 {
+    font-size:60px;
+}
+
+.special{
+    background-color: aquamarine;
+    color: black;
+    border-radius: 100%;
+}
+
+.centered-text {
+    text-align:center;
+    padding: 20px;
+}
