@@ -1,14 +1,40 @@
 
+html, body {
+    cursor: url("../assets/handcursor.png"), auto;
+    
+}
 
+.custom-cursor {
+    cursor: url("../assets/handcursor.png"), pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.site-wide {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .pink-door {
     justify-content: center;
     display: flex;
-
+    cursor: url("../assets/handcursor.png"), auto;
 }
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dog {
@@ -29,4 +55,34 @@
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
+}
+
+.dog-3 {
+    animation: movingboy3 2s infinite;
+}
+
+@keyframes movingboy3 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(30deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.dog-4 {
+    animation: movingboy4 2s infinite;
+}
+
+@keyframes movingboy4 {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.dog-5 {
+    animation: movingboy5 .2s infinite;
+}
+
+@keyframes movingboy5 {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(20px, 0px);}
+    100% {transform: translate(0px, 0px);}
 }
