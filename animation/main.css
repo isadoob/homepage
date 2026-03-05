@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: rgb(62, 232, 255);
+    width: 200px;
+    height: 200px;
+    animation: test 4s 2s infinite linear alternate both;
+}
+
+@keyframes test {
+    0% {
+        background-color: red;
+        height: 200px;
+    }
+    100% {
+        background-color: rgb(208, 255, 0);
+        height: 400px;
+    }
+}
+
+body { 
+    margin:0;
+}
+
+.container {
+    background-color: rgb(58, 44, 44);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    position: relative;
+
+    overflow:hidden;
+
+    animation: blink 6s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        height:100vh;
+    }
+    100% {
+        height:0;
+    }
+}
+
+.circle {
+    background-color: rgb(217, 255, 171);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: salmon;
+        scale: 1;
+    }
+
+    100% {
+        background-color: rgb(208, 255, 0);
+        scale: 1.4;
+    }
+}
+
+.square {
+    background-color: rgb(255, 62, 197);
+    width: 100px;
+    height: 100px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0;
+        scale:1;
+    }
+
+    50% {
+        scale:1.5;
+    }
+
+    100% {
+        rotate:360deg;
+        scale:1;
+    }
+}
+
+.mover {
+    background-color: rgb(255, 216, 62);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom:0;
+    left:0; 
+    animation: move 4s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        left:0;
+    }
+
+    100% {
+        left:calc(100% - 50px);
+        rotate:900deg
+    }
+}
+
+.changer {
+    background: chartreuse;
+    width: 100px;
+    height: 100px;
+    transition: background 2s, border-radius 2s, rotate 2s; 
+}
+
+.changer:hover {
+    background: royalblue;
+    border-radius: 100%;
+    rotate:360deg;
+}

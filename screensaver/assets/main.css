@@ -1,0 +1,445 @@
+* { 
+    box-sizing: border-box;
+}
+
+
+
+body { 
+    background-color: rgb(21, 1, 1);
+    display: grid;
+    place-content: center;
+}
+
+
+
+
+.container #burst8 {
+    grid-area: 1/1;
+    z-index: 1;
+}
+
+.container #burst7 {
+    grid-area: 1/1;
+    z-index: 2;
+}
+
+.container #burst6 {
+    grid-area: 1/1;
+    z-index: 3;
+} 
+
+.container #burst5 {
+    grid-area: 1/1;
+    z-index: 4;
+}
+
+.container #burst4 {
+    grid-area: 1/1;
+    z-index: 5;
+}
+
+.container #burst3 {
+    grid-area: 1/1;
+    z-index: 6;
+}
+
+.container #burst2 {
+    grid-area: 1/1;
+    z-index: 7;
+} 
+
+.container #burst {
+    grid-area: 1/1;
+    z-index: 8;
+}
+
+.container #heart {
+    grid-area: 1/1;
+    z-index: 9;
+}
+
+
+
+.container {
+    background-color: rgb(21, 1, 1);
+    padding: 800px;
+    width: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    place-items: center;
+}   
+
+
+
+
+#burst8 {
+      background: rgb(255, 24, 166);
+      width: 450px;
+      height: 450px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s infinite alternate;
+    }
+
+    #burst8:before,
+    #burst8:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 450px;
+      width: 450px;
+      background: rgb(255, 24, 166);
+
+    }
+    #burst8:before {
+      transform: rotate(30deg);
+
+    }
+    #burst8:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst7 {
+      background: rgb(27, 255, 247);
+      width: 400px;
+      height: 400px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -.2s infinite alternate;
+    }
+
+    #burst7:before,
+    #burst7:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px;
+      width: 400px;
+      background: rgb(27, 255, 247);
+
+    }
+    #burst7:before {
+      transform: rotate(30deg);
+
+    }
+    #burst7:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst6 {
+      background: rgb(0, 255, 106);
+      width: 350px;
+      height: 350px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -.4s infinite alternate;
+    } 
+
+    #burst6:before,
+    #burst6:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 350px;
+      width: 350px;
+      background: rgb(0, 255, 106);
+
+    }
+    #burst6:before {
+      transform: rotate(30deg);
+
+    }
+    #burst6:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst5 {
+      background: rgb(242, 255, 0);
+      width: 300px;
+      height: 300px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -.6s infinite alternate;
+    }
+
+    #burst5:before,
+    #burst5:after {
+      background: rgb(242, 255, 0);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 300px;
+      width: 300px;
+      
+
+    }
+
+    #burst5:before {
+      transform: rotate(30deg);
+
+    }
+
+    #burst5:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst4 {
+      background: rgb(255, 24, 166);
+      width: 250px;
+      height: 250px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -.8s infinite alternate;
+    }
+
+    #burst4:before,
+    #burst4:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 250px;
+      width: 250px;
+      background: rgb(255, 24, 166);
+
+    }
+    #burst4:before {
+      transform: rotate(30deg);
+
+    }
+    #burst4:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst3 {
+      background: rgb(27, 255, 247);
+      width: 200px;
+      height: 200px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -1s infinite alternate;
+    }
+
+    #burst3:before,
+    #burst3:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 200px;
+      background: rgb(27, 255, 247);
+
+    }
+    #burst3:before {
+      transform: rotate(30deg);
+    }
+    
+    #burst3:after {
+      transform: rotate(60deg);
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    }
+} */
+
+
+
+#burst2 {
+      background: rgb(0, 255, 106);
+      width: 150px;
+      height: 150px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -1.2s infinite alternate;
+    }
+
+    #burst2:before,
+    #burst2:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 150px;
+      width: 150px;
+      background: rgb(0, 255, 106);
+
+    }
+    #burst2:before {
+      transform: rotate(30deg);
+
+    }
+    #burst2:after {
+      transform: rotate(60deg);
+
+    }
+
+    /* @keyframes pulse {
+    0% {
+        scale: 3;
+    }
+
+    100% {
+        scale: 4;
+    } */
+/* } */
+
+
+
+#burst {
+      background: rgb(242, 255, 0);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      text-align: center;
+      animation: pulse 1s -1.4s infinite alternate;
+    }
+
+    #burst:before,
+    #burst:after {
+      background: rgb(242, 255, 0);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100px;
+    }
+
+    #burst:before {
+      transform: rotate(30deg);
+    }
+
+    #burst:after {
+      transform: rotate(60deg);
+    }
+
+    @keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.5;
+    }
+}
+
+
+
+ #heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      animation: heart-pulse 1s -1.6s infinite alternate;
+    }
+
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+      animation: heart-pulse 1s -1.6s infinite alternate;
+    }
+
+@keyframes heart-pulse {
+    0% {
+        background-color: red;
+        scale: 1;
+    }
+
+    100% {
+        background-color: rgb(255, 15, 167);
+        scale: 1.5;
+    }
+}
