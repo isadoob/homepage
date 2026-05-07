@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-image: url(../zmain_hub_assets/stars2.gif);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url(../zmain_hub_assets/rainbow-pattern.gif);
+    padding: 10px;
+    border-radius: 7px;
+    border: 4px solid rgb(234, 131, 234);
+}
+
+
+main{
+    display: flex;
+    gap: 10px;
+}
+
+.left{
+    background: url(../zmain_hub_assets/windows.gif);
+    background-size: cover;
+}
+
+header, footer {
+    text-align: center;
+    border-radius: 7px;
+}
+
+header,
+.left,
+.center,
+.right,
+footer{
+    
+    padding: 20px;
+}
+
+.bar{
+    padding: 7px;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(255, 222, 221, 1) 0%, rgba(255, 232, 217, 1) 10%, rgba(255, 244, 212, 1) 20%, rgba(231, 255, 224, 1) 30%, rgba(227, 252, 236, 1) 40%, rgba(226, 249, 248, 1) 50%, rgba(225, 237, 254, 1) 60%, rgba(225, 226, 255, 1) 70%, rgba(243, 224, 255, 1) 80%, rgba(251, 212, 239, 1) 90%, rgba(255, 229, 239, 1) 100%);
+    border-radius: 7px;
+}
+
+.buttons{
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(255, 222, 221, 1) 0%, rgba(255, 232, 217, 1) 10%, rgba(255, 244, 212, 1) 20%, rgba(231, 255, 224, 1) 30%, rgba(227, 252, 236, 1) 40%, rgba(226, 249, 248, 1) 50%, rgba(225, 237, 254, 1) 60%, rgba(225, 226, 255, 1) 70%, rgba(243, 224, 255, 1) 80%, rgba(251, 212, 239, 1) 90%, rgba(255, 229, 239, 1) 100%);
+    color: hotpink;
+    display: grid;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.center{
+    width: 50%;
+    border-radius: 7px;
+    background-color: antiquewhite;
+}
+
+.left, .right{
+    width: 25%;
+    border-radius: 7px;
+}
+
+.right{
+    background-color: rgb(2, 1, 0);
+}
+
+header{
+    background-color: antiquewhite;
+    background: url(flowers2.gif);
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.blinkiesrunner{
+    max-width: 1010px;
+    outline: 3px solid lime;
+}
+
+.scroller{ 
+    paddin
+    display: flex;
+    flex-wrap:wrap;
+    gap: .3rem;
+}
+
+.blinkiesrunner[data-animated=true]{
+    overflow: hidden;
+}
+
+[data-animated=true].scroller {
+    flex-wrap: nowrap;
+}
+
+footer{
+    background-color: antiquewhite;
+    background: url(flowers2.gif);
+    padding: 0px;
+    padding-top: 10px;
+}
+
+/* min-width = mobile first */
+/* for mobile-first, we want our media queries to increase in pxel size as we move down our css document */
+
+/* max-width = desktop first */
+/* for desktop-first, we want our media queries to decrease in pixel size as we move down our css document */
+
+@media screen and (max-width: 1000px) {
+    body {
+        
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .center, .right{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        
+    }
+}
